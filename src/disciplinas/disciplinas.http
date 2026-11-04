@@ -1,0 +1,29 @@
+### LISTAR DISCIPLINAS
+GET http://localhost:3000/disciplinas
+
+### MOSTRAR DISCIPLINA
+GET http://localhost:3000/disciplinas/1
+
+### CRIAR DISCIPLINA
+POST http://localhost:3000/disciplinas
+Content-Type: application/json
+
+{
+    "nome": "História",
+    "cargaHoraria": 40,
+    "semestre": 4,
+    "curso": "Tecnologia em Análise e Desenvolvimento de Sistemas"
+}
+
+### ATUALIZAR DISCIPLINA
+PATCH http://localhost:3000/disciplinas/1
+Content-Type: application/json
+
+{
+    "nome": "Desenvolvimento Web 2"
+}
+
+### REMOVER DISCIPLINA
+DELETE http://localhost:3000/disciplinas/1
+
+

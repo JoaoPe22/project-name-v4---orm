@@ -1,0 +1,25 @@
+### Criar uma Turma
+POST http://localhost:3000/turmas
+Content-Type: application/json
+
+{
+  "ano": 2026,
+  "disciplinaId": 2
+}
+
+### Listar todas as Turmas
+GET http://localhost:3000/turmas
+
+### Buscar Turma por ID
+GET http://localhost:3000/turmas/1
+
+### Atualizar Turma
+PATCH http://localhost:3000/turmas/1
+Content-Type: application/json
+
+{
+  "ano": 2026
+}
+
+### Deletar Turma
+DELETE http://localhost:3000/turmas/1
