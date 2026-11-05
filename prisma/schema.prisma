@@ -14,11 +14,19 @@ model Turma {
   disciplina   Disciplina @relation(fields: [disciplinaId], references: [id])
 }
 
+model Docente {
+  id           Int        @id @default(autoincrement())
+  nome         String
+  disciplinaId Int
+  disciplina   Disciplina @relation(fields: [disciplinaId], references: [id])
+}
+
 model Disciplina {
-  id           Int     @id @default(autoincrement())
+  id           Int       @id @default(autoincrement())
   nome         String
   cargaHoraria Int
   semestre     Int
   curso        String
   Turma        Turma[]
+  Docente      Docente[]
 }

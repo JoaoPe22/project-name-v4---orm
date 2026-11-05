@@ -9,7 +9,7 @@ POST http://localhost:3000/disciplinas
 Content-Type: application/json
 
 {
-    "nome": "História",
+    "nome": "Engenharia de Software",
     "cargaHoraria": 40,
     "semestre": 4,
     "curso": "Tecnologia em Análise e Desenvolvimento de Sistemas"
@@ -26,4 +26,4 @@ Content-Type: application/json
 ### REMOVER DISCIPLINA
 DELETE http://localhost:3000/disciplinas/1
 
-
+                                                                                                            

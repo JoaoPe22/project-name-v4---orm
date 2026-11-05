@@ -5,9 +5,10 @@ import { DisciplinasModule } from './disciplinas/disciplinas.module';
 import { IdGeneratorService } from './common/id-generator/id-generator.service';
 import { PrismaModule } from 'prisma/prisma.module';
 import { TurmasModule } from './turmas/turmas.module';
+import { DocenteModule } from './docente/docente.module';
 
 @Module({
-  imports: [DisciplinasModule, PrismaModule, TurmasModule],
+  imports: [DisciplinasModule, PrismaModule, TurmasModule, DocenteModule],
   controllers: [AppController],
   providers: [AppService, IdGeneratorService],
 })

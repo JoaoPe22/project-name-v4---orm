@@ -17,6 +17,10 @@ export class DisciplinasService {
     return this.prisma.disciplina.findUnique({ where: { id } });
   }
 
+  findBySemestre(semestre: number) {
+    return this.prisma.disciplina.findMany({ where: { semestre } });
+  }
+
   update(id: number, dados: any) {
     return this.prisma.disciplina.update({
       where: { id },

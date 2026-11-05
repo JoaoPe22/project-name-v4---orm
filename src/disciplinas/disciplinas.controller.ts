@@ -26,6 +26,11 @@ export class DisciplinasController {
     return this.disciplinasService.findOne(id);
   }
 
+  @Get('semestre/:semestre')
+  findBySemestre(@Param('semestre', ParseIntPipe) semestre: number) {
+    return this.disciplinasService.findBySemestre(semestre);
+  }
+
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateDisciplinaDto: UpdateDisciplinaDto) {
     return this.disciplinasService.update(+id, updateDisciplinaDto);
